@@ -10,6 +10,7 @@ TO DO:
 - to prevent from overfitting issue 
 
    2. Dropout
+- dropout some layers during training, to make sure the model uses its weights in a more general, diverse way
 - to prevent from overfitting issue 
 
    3. L2 Regularization
@@ -18,7 +19,11 @@ TO DO:
 - having more stability than L1 Regularization 
 
    4. Model with Glorot Normal kernel-initialization instead of Uniform
-- Xavier initialization let output to be the form of standard normal distribution
+- initializing kernel weigts with Glorot Normal instead of Uniform distriution
+- hopefully start in a "better" position in the loss landscape (find global minimum more easily during gradient descend)
+- aud with the issue of underfitting
 
-   5. Label smoothing
-- to reduce over-confidence    
+   5. Data Augmentation
+- train with augmented data (rotate some images)
+- more divese training data leads to better generalization
+- aid with overfitting issue

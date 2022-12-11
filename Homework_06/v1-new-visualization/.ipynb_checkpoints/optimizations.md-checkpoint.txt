@@ -3,8 +3,27 @@ TO DO:
 ## 5 things to optimze in our model to fight overfitting 
 (see models.py file for code implementations)
 
-    * batch normalization
-    * dropout
-    * regularization L2
-    * different parameter initialization? Glorot Normal init instead of Uniform 
-    * label smoothing? 
+   1. Batch normalization
+- to make the training speed faster
+- even though if we put high learning rate, optimazation works well
+- weight initialization can be robust
+- to prevent from overfitting issue 
+
+   2. Dropout
+- dropout some layers during training, to make sure the model uses its weights in a more general, diverse way
+- to prevent from overfitting issue 
+
+   3. L2 Regularization
+- to prevent from overfitting issue
+- to improve generalization 
+- having more stability than L1 Regularization 
+
+   4. Model with Glorot Normal kernel-initialization instead of Uniform
+- initializing kernel weigts with Glorot Normal instead of Uniform distriution
+- hopefully start in a "better" position in the loss landscape (find global minimum more easily during gradient descend)
+- aud with the issue of underfitting
+
+   5. Data Augmentation
+- train with augmented data (rotate some images)
+- more divese training data leads to better generalization
+- aid with overfitting issue
